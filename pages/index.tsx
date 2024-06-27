@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
-import ScreenTable from '@/components/table'
+import GamerTable from '@/components/table'
 import {ResponseProps} from '@/pages/api/types'
 import {getScore} from '@/utils/fetch'
 
@@ -14,8 +14,8 @@ export default function Home({score}: HomeProps) {
       <main>
         <Container maxWidth="xl">
           <Box display="flex" alignItems="center" justifyContent="space-around" marginTop={3}>
-            <ScreenTable gamers={score.winners} titleTable={'Winning team'} />
-            <ScreenTable gamers={score.losers} titleTable={'Loser team'} />
+            <GamerTable gamers={score.winners} titleTable={'Winning team'} />
+            <GamerTable gamers={score.losers} titleTable={'Loser team'} />
           </Box>
         </Container>
       </main>

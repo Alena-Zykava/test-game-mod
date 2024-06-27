@@ -19,7 +19,7 @@ type Props = {
   titleTable: string
 }
 
-const ScreenTable = ({gamers, titleTable}: Props) => {
+const GamerTable = ({gamers, titleTable}: Props) => {
   return (
     <Box display="flex" flexDirection="column" gap={2}>
       <Typography variant={'h5'}>{titleTable}</Typography>
@@ -60,4 +60,4 @@ const ScreenTable = ({gamers, titleTable}: Props) => {
   )
 }
 
-export default ScreenTable
+export default GamerTable
